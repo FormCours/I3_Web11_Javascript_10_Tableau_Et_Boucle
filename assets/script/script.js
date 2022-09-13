@@ -95,6 +95,9 @@ console.log(modifTab);
 
 
 
+
+
+
 const people = ['Della', 'Zaza', 'Daisy', 'Miss Tick', 'Lili', 'Lulu', 'Zizi' ];
 
 for (let i = 0; i < people.length; i++) {
@@ -113,3 +116,7 @@ people.forEach((person, index) => {
     // Traitement
     console.log(person);
 })
+
+
+// Cloner un tableau
+const clone = [...people];
