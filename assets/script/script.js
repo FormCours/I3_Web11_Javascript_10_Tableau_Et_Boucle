@@ -67,10 +67,10 @@ console.log('Premiere Valeur :', val1);
 
 // Derniere valeur
 const val2 = modifTab[modifTab.length - 1];
-console.log('Derniere Valeur :', val2); 
+console.log('Derniere Valeur :', val2);
 
 // La cinquieme valeur
-const val3 = modifTab[4]
+const val3 = modifTab[4];
 console.log('Cinquieme Valeur :', val3);
 
 
@@ -80,7 +80,7 @@ modifTab[2] = 'Della';
 console.table(modifTab);
 
 // Ajouter une valeur
-modifTab[7] = 'Zahra'
+modifTab[7] = 'Zahra';
 console.table(modifTab);
 
 modifTab[20] = 'Jennifer';
@@ -92,3 +92,24 @@ console.log(modifTab);
 // Documentation sur les array
 // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+
+
+
+const people = ['Della', 'Zaza', 'Daisy', 'Miss Tick', 'Lili', 'Lulu', 'Zizi' ];
+
+for (let i = 0; i < people.length; i++) {
+    const person = people[i];
+    
+    // Traitement    
+    console.log(person);
+}
+
+for (const person of people) {
+    // Traitement
+    console.log(person);
+}
+
+people.forEach((person, index) => {
+    // Traitement
+    console.log(person);
+})
